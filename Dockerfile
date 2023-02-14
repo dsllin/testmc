@@ -4,5 +4,6 @@ RUN wget -O service.jar https://github.com/IzzelAliz/Arclight/releases/download/
 RUN	java -jar service.jar
 RUN echo eula=true > ./eula.txt
 ADD server.properties ./server.properties
+RUN chmod +x run.sh
 EXPOSE 25565
 CMD sh./run.sh
