@@ -6,4 +6,4 @@ RUN echo eula=true > ./eula.txt
 ADD server.properties ./server.properties
 RUN chmod +x run.sh
 EXPOSE 25565
-CMD run.sh
+CMD java -jar service.jar
